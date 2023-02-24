@@ -4,11 +4,20 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bca97d68-3987-4185-bdaf-7ff66be6dd08" name="Changes" comment="" />
+    <list default="true" id="bca97d68-3987-4185-bdaf-7ff66be6dd08" name="Changes" comment="Created the Let's-Learn repo, created the GO directory">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
   </component>
   <component name="GOROOT" url="file:///nix/store/v2akyg8vbs81zvasfijlb13g3fd03pk1-go-1.19.5/share/go" />
   <component name="Git.Settings">
@@ -18,12 +27,16 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2MABcFkfDko5TX7kfBjl2Ln6VVN" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultGoTemplateProperty": "Go File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
@@ -38,7 +51,7 @@
     "last_opened_file_path": "/home/sophia"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Build.go build Functions.go">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="Lets-Learn" />
       <working_directory value="$PROJECT_DIR$" />
@@ -56,6 +69,14 @@
       <filePath value="$PROJECT_DIR$/Programming Languages/GOlang/Modules/Basics.go" />
       <method v="2" />
     </configuration>
+    <configuration name="go build Functions.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Lets-Learn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/Programming Languages/GOlang/Modules/Functions.go" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
       <module name="Lets-Learn" />
       <working_directory value="$PROJECT_DIR$" />
@@ -68,6 +89,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build Functions.go" />
         <item itemvalue="Go Build.go build Basics.go" />
       </list>
     </recent_temporary>
@@ -86,6 +108,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Created the Let's-Learn repo, created the GO directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created the Let's-Learn repo, created the GO directory" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
