@@ -47,9 +47,8 @@ func main() {
 	fmt.Println(add(42, 3))
 	fmt.Println(swap(a, b))
 
-	// This code is not working properly
-	// I have no idea why since in the go playground it works
-	fmt.Println("Operate result: ", operateXY(32))
+	// Multiple return functions cannot have their output in a single variable context since you
+	// are trying to just use one variable but are getting two
+	var number1, number2 = operateXY(32)
+	fmt.Println("Operate result: ", number1, number2)
 }
-
-// Test
