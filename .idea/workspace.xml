@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bca97d68-3987-4185-bdaf-7ff66be6dd08" name="Changes" comment="Created the Let's-Learn repo, created the GO directory">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +51,7 @@
     &quot;last_opened_file_path&quot;: &quot;/home/sophia&quot;
   }
 }</component>
-  <component name="RunManager" selected="Go Build.go build Variables.go">
+  <component name="RunManager" selected="Go Build.go build Loops.go">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="Lets-Learn" />
       <working_directory value="$PROJECT_DIR$" />
@@ -76,6 +75,14 @@
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/Programming Languages/GOlang/Modules/Functions.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build Loops.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Lets-Learn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/Programming Languages/GOlang/Modules/Loops.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build Types.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -106,6 +113,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build Loops.go" />
         <item itemvalue="Go Build.go build Variables.go" />
         <item itemvalue="Go Build.go build Types.go" />
         <item itemvalue="Go Build.go build Functions.go" />
