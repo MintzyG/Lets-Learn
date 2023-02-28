@@ -51,7 +51,7 @@
     &quot;last_opened_file_path&quot;: &quot;/home/sophia&quot;
   }
 }</component>
-  <component name="RunManager" selected="Go Build.go build Loops.go">
+  <component name="RunManager" selected="Go Build.go build Conditionals.go">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="Lets-Learn" />
       <working_directory value="$PROJECT_DIR$" />
@@ -61,12 +61,12 @@
       <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build Basics.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build Conditionals.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Lets-Learn" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/Programming Languages/GOlang/Modules/Basics.go" />
+      <filePath value="$PROJECT_DIR$/Programming Languages/GOlang/Modules/Conditionals.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build Functions.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -113,11 +113,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build Conditionals.go" />
         <item itemvalue="Go Build.go build Loops.go" />
         <item itemvalue="Go Build.go build Variables.go" />
         <item itemvalue="Go Build.go build Types.go" />
         <item itemvalue="Go Build.go build Functions.go" />
-        <item itemvalue="Go Build.go build Basics.go" />
       </list>
     </recent_temporary>
   </component>
