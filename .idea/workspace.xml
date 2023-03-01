@@ -6,14 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bca97d68-3987-4185-bdaf-7ff66be6dd08" name="Changes" comment="Created the Let's-Learn repo, created the GO directory">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Programming Languages/GOlang/Modules/Basics.go" beforeDir="false" afterPath="$PROJECT_DIR$/Programming Languages/GOlang/Modules/1: Basics.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Programming Languages/GOlang/Modules/Conditionals.go" beforeDir="false" afterPath="$PROJECT_DIR$/Programming Languages/GOlang/Modules/5: Conditionals.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Programming Languages/GOlang/Modules/Defer.go" beforeDir="false" afterPath="$PROJECT_DIR$/Programming Languages/GOlang/Modules/7: Defer.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Programming Languages/GOlang/Modules/Functions.go" beforeDir="false" afterPath="$PROJECT_DIR$/Programming Languages/GOlang/Modules/4: Functions.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Programming Languages/GOlang/Modules/Loops.go" beforeDir="false" afterPath="$PROJECT_DIR$/Programming Languages/GOlang/Modules/6: Loops.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Programming Languages/GOlang/Modules/Pointers.go" beforeDir="false" afterPath="$PROJECT_DIR$/Programming Languages/GOlang/Modules/8: Pointers.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Programming Languages/GOlang/Modules/Types.go" beforeDir="false" afterPath="$PROJECT_DIR$/Programming Languages/GOlang/Modules/3: Types.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Programming Languages/GOlang/Modules/Variables.go" beforeDir="false" afterPath="$PROJECT_DIR$/Programming Languages/GOlang/Modules/2: Variables.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +51,7 @@
     &quot;last_opened_file_path&quot;: &quot;/home/sophia&quot;
   }
 }</component>
-  <component name="RunManager" selected="Go Build.go build Pointers.go">
+  <component name="RunManager" selected="Go Build.go build 9: Structs.go">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="Lets-Learn" />
       <working_directory value="$PROJECT_DIR$" />
@@ -67,6 +59,14 @@
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build 9: Structs.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Lets-Learn" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/Programming Languages/GOlang/Modules/9: Structs.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build Conditionals.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -101,14 +101,6 @@
       <filePath value="$PROJECT_DIR$/Programming Languages/GOlang/Modules/Pointers.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build Variables.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="Lets-Learn" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/Programming Languages/GOlang/Modules/Variables.go" />
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
       <module name="Lets-Learn" />
       <working_directory value="$PROJECT_DIR$" />
@@ -121,11 +113,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build 9: Structs.go" />
         <item itemvalue="Go Build.go build Pointers.go" />
         <item itemvalue="Go Build.go build Defer.go" />
         <item itemvalue="Go Build.go build Conditionals.go" />
         <item itemvalue="Go Build.go build Loops.go" />
-        <item itemvalue="Go Build.go build Variables.go" />
       </list>
     </recent_temporary>
   </component>
