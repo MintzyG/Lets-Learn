@@ -92,6 +92,41 @@ func main() {
 		fmt.Println("The slice is nil!")
 	}
 
+	// Creating a slice with make:
+	// Slices can be created with the make() function, this is how you create dynamically sized arrays
+	// The make function allocates a zeroed array and returns a slice that refers to that array
+
+	makeSlice := make([]int, 5) // makes a dynamic array of length 5
+	// You can pass a third argument to specify a capacity
+	printSlice(makeSlice)
+
+	// Slices of slices
+	// Slices can contain any type, including other slices
+	// Since I created a [][]slice there is no need to declare []int inside this slice
+	board := [][]int{
+		{1, 2, 3},
+		{2, 3, 4},
+		{3, 4, 5},
+	}
+	// Board is a matrix of 3x3 proportions, but you are not limited to a fixed size like that
+	// You can have for example a slice of cap = 3 len = 3 that contains the following slices
+	// []int{1, 2, 3, 4, ... , 99}, []int{1}, []int{1, 2, 3, 4, 5}
+
+	fmt.Println(board[2][2])
+	fmt.Println(board[1][2])
+
+	// Appending
+	// Lets say you created a nil slice, but you want elements in it
+	// You can add them by using the append() function
+	var nilSlice2 []int
+	printSlice(nilSlice2)
+	// This function is appending the values 1, 2 and 3 to the nil slice
+	// The first parameter is the slice you'll be appending to, the rest are the values you are appending
+	nilSlice2 = append(nilSlice2, 1, 2, 3)
+	printSlice(nilSlice2)
+	// If the slice you are appending to doesn't have space for more values, the append function will
+	// allocate a bigger array, the returned slice will point to this new array
+
 }
 
 func printSlice(slice []int) {
