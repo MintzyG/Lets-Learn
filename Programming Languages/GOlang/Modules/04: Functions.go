@@ -40,17 +40,6 @@ func operateXY(number int) (x, y int) {
 	return
 }
 
-/*
-Functions are values too, they can be passed around just like other values
-Function values may be used as function arguments and return values
-
-Example:
-
-This function receives a function as input
-this input function receives int, int as input and returns int as output
-Func DoMath(fn func(int, int) int)int {}
-*/
-
 func main() {
 	a, b := "Hello", "World"
 
