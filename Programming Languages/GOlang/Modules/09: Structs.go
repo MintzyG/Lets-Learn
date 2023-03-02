@@ -28,7 +28,7 @@ func main() {
 
 	// Struct Literals
 	// A struct literal describes a newly allocated struct by listing the values of its fields
-	// You can also just list a subset of fields by using 'field': syntax (and now the order is irrelevant)
+	// You can also allocate only certain parts of a struct by specifying its name EX: Vertex{X: 3} only changes the x value
 	// Using & prefix returns a pointer to the struct value
 	v1 := Vertex{1, 2}  // X:1 and Y:2
 	v2 := Vertex{X: 1}  // X:1 and Y:0

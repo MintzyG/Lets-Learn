@@ -44,9 +44,11 @@ func main() {
 	// Map literals:
 	// Just like arrays, structs and slices maps can be declared through literals
 
+	// If the top level type is just a type name you can omit it from the elements of the literal
+	// Meaning I didn't have to type 'Companies' alongside the keys because the top level type here is a type name
 	myCompanies := map[string]Companies{
 		"Google": {
-			"Google",
+			"Alphabet",
 			1989,
 		},
 		"Amazon": {
@@ -60,5 +62,51 @@ func main() {
 		fmt.Println(v.Name, "was founded in", v.Founded)
 
 	}
+
+	// Mutating maps:
+
+	// You can insert or update an element in the map by using:
+	// m[Key] = element
+	// For example:
+
+	// Inserting an element in the map
+	myCompanies["Apple"] = Companies{
+		"Apple",
+		1975,
+	}
+
+	// Updating an element in the map e
+	myCompanies["Google"] = Companies{
+		"Google",
+		1989,
+	}
+
+	fmt.Println("-------------------")
+
+	for _, v := range myCompanies {
+
+		fmt.Println(v.Name, "was founded in", v.Founded)
+
+	}
+
+	// Retrieving an element from a map
+	elem := myCompanies["Apple"]
+	fmt.Println(elem)
+
+	// Delete an element from a map
+	delete(myCompanies, "Google")
+
+	// Test if an element is present with a two value assignment
+	// If the key is in the map 'ok' is true,if not 'ok' is false
+	// If the key is not in the map element is its zero type
+	elem2, ok := myCompanies["Google"]
+	if ok {
+		fmt.Println(elem2)
+	} else {
+		fmt.Println("Element was removed")
+		fmt.Println("Element's zero type:", elem2)
+	}
+
+	// Note if elem or ok have not been declared you can use the short declaration just like in the example above
 
 }
