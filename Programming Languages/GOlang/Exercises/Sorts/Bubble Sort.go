@@ -9,7 +9,7 @@ import (
 func main() {
 
 	var Bubble [20]int
-	var Swap int
+	var Swap, Iterations int
 	var Sorted bool
 
 	rand.Seed(time.Now().Unix())
@@ -34,6 +34,7 @@ func main() {
 		}
 
 		if !Sorted {
+			Iterations += 1
 			for i := 0; i < len(Bubble)-1; i++ {
 				if Bubble[i] > Bubble[i+1] {
 					Swap = Bubble[i]
@@ -47,6 +48,7 @@ func main() {
 
 	}
 
-	fmt.Println(Bubble)
+	fmt.Println("Sorted array", Bubble)
+	fmt.Println("Took", Iterations, "iterations")
 
 }
