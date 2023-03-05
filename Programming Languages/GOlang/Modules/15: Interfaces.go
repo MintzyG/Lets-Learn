@@ -91,6 +91,23 @@ func main() {
 	T, ok := ei.(MyNumber)
 	fmt.Println(T, ok)
 
+	// Type Switches:
+	// A type switch is a construct that allows for multiple assertions in series
+	// It works like a regular switch statement but instead of testing for values it test for types
+	// If a case finds that the interface value is of that type, then that case will run
+	// The declaration in a type switch is the same as a type assertion but the specific type T is replaced by the keyword 'type'
+
+	switch ei.(type) {
+	case int:
+		fmt.Println("Type is int")
+	case float64:
+		fmt.Println("Type is float")
+	case MyNumber:
+		fmt.Println("Type is MyNumber")
+	default:
+		fmt.Println("Type didn't match any test case")
+	}
+
 }
 
 // This method means the type MyNumber implements the interface,
