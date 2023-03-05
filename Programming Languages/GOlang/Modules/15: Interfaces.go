@@ -61,11 +61,35 @@ func main() {
 	ei = 42
 	Describe2(ei)
 
+	ei = 2.754
+	Describe2(ei)
+
 	ei = MyNumber(30)
 	Describe2(ei)
 
-	ei = 2.754
-	Describe2(ei)
+	// Type Assertions
+	// They provide access to an interface value's underlying concrete value
+	// Syntax: i.(T)
+
+	v := ei.(MyNumber)
+
+	fmt.Println(v)
+
+	// ^ This statement asserts that the interface value 'ei' holds the concrete type 'MyNumber' and
+	// assigns that asserted value to the variable v
+	// if the interface value does not hold the asserted type, the statement will trigger a panic
+
+	// You can test if an interface value holds a specific type by using the ok keyword, this works because a type assertion
+	// returns two values: the underlying value and a boolean value that reports if the assertion succeeded
+
+	// If the interface value holds the asserted type ok will return true if not t will be the interface value zero's value
+	// and ok will return false and no panic occurs
+
+	t, ok := ei.(float64)
+	fmt.Println(t, ok)
+
+	T, ok := ei.(MyNumber)
+	fmt.Println(T, ok)
 
 }
 

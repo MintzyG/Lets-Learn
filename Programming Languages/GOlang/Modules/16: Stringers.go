@@ -56,4 +56,5 @@ func (c Customer) String() string {
 	}
 
 	return fmt.Sprintf("%v is %v year old and %v a customer", c.Name, c.Age, text)
+
 }
