@@ -59,17 +59,18 @@ func main() {
 	}
 
 	// Switches can have no condition statement
-	// Making a good structure for if - then - else
+	// Making it with a good structure can create 'if - then - else' like block
 	// Example: if -> (time < 12) then -> {"good"} else -> if (time < 17) ... etc
+	// Switches can use commas to separate multiple expressions in a single case
 
 	t := time.Now()
 	switch {
-	case t.Hour() < 12:
-		fmt.Println("Good morning!")
-	case t.Hour() < 17:
-		fmt.Println("Good afternoon.")
 	default:
 		fmt.Println("Good evening.")
+	case t.Hour() < 12:
+		fmt.Println("Good morning!")
+	case t.Hour() < 17, t.Hour() < 18:
+		fmt.Println("Good afternoon.")
 	}
 
 }
