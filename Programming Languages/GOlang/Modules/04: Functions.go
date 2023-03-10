@@ -60,4 +60,34 @@ func main() {
 	// are trying to just use one variable but are getting two
 	var number1, number2 = operateXY(32)
 	fmt.Println("Operate result: ", number1, number2)
+
+	// Variadic functions
+	// Read first after the main()
+
+	fmt.Println(1, 2, 3)
+
+	multiply(1, 2, 3, 4)
+
+	// If you already have multiple args in a slice, apply them in the function like this func(slice...)
+	nums := []int{1, 2, 3, 4, 5, 6, 7}
+	multiply(nums...)
+
+}
+
+// Variadic functions
+// They can be called with any number of trailing arguments for example
+// Println is a variadic function since it can do this (fmt.Println(1, 2, 3))
+// Let's make a function that will take an arbitrary number of int arguments
+// Within the function the type 'numbers' is equivalent to []int
+// So we can call len or use range on it for example
+func multiply(numbers ...int) {
+
+	var result int = 1
+
+	for _, v := range numbers {
+		result *= v
+	}
+
+	fmt.Println("The", len(numbers), "chosen multiplied resulted in:", result)
+
 }
