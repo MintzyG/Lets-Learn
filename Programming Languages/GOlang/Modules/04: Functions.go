@@ -49,6 +49,21 @@ this input function receives int, int as input and returns int as output
 Func DoMath(fn func(int, int) int)int {}
 */
 
+// Closures
+// They are useful when you want to declare a function inline without having to name it
+
+// This function we defined returns another function, which is anonymously defined
+// the returned function closes the over the variable i to form a closure
+func nextNumber() func() int {
+
+	i := 0
+	return func() int {
+		i++
+		return i
+	}
+
+}
+
 func main() {
 	a, b := "Hello", "World"
 
@@ -60,6 +75,24 @@ func main() {
 	// are trying to just use one variable but are getting two
 	var number1, number2 = operateXY(32)
 	fmt.Println("Operate result: ", number1, number2)
+
+	// Closures
+
+	// We call our closure, assigning its value (a function to nextInt)
+	// This function value captures its own 'i' value which will be updated each time we call nextInt
+	nextInt := nextNumber()
+
+	// Calling next int to show its 'i' value increasing
+	fmt.Println(nextInt())
+	fmt.Println(nextInt())
+	fmt.Println(nextInt())
+
+	// Calling next number to show it doesn't affect nextInt
+	nextNumber()
+
+	// nextNumber doesn't affect nextInt because it is a closure, it "captured" the value for itself
+	// That's why here it still prints '4'
+	fmt.Println(nextInt())
 
 	// Variadic functions
 	// Read first after the main()
