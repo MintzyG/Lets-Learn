@@ -31,9 +31,9 @@ type Player struct {
 }
 
 func (p Player) String() string {
-	var PlayerText = "Hand:\n"
+	var PlayerText = ":\n"
 	for _, v := range p.Hand.Cards {
-		PlayerText += v.String()
+		PlayerText += v.String() + " "
 	}
 
 	return fmt.Sprintf("PlayerID: %v\nMoney: %v\nHand%v", p.PlayerID, p.Money, PlayerText)
@@ -44,6 +44,7 @@ type Game struct {
 	Dealer          Player
 	Deck            Container
 	NumberOfPlayers int
+	CurrentPlayer   int
 }
 
 type Setup interface {
@@ -58,11 +59,15 @@ func SetupGame(s Setup) {
 	s.ShuffleDeck()
 }
 
+type GameFunctionality interface {
+	DealCard()
+}
+
 func main() {
 
 	Blackjack := Game{NumberOfPlayers: 1}
 	SetupGame(&Blackjack)
-	Blackjack.Deck.PrintContainer()
+	Blackjack.DealCard(&Blackjack.Players[0])
 	Blackjack.PrintPlayers()
 }
 
@@ -71,38 +76,39 @@ func (g *Game) SetupDeck() {
 	deck := Container{Name: "Deck"}
 	g.Deck = deck
 	cardSetup := Card{}
-
-	for _, v := range suits {
-		for _, w := range values {
-			cardSetup.Suit = v
-			cardSetup.Face = w
-			switch cardSetup.Face {
-			case "Jack", "Queen", "King":
-				cardSetup.Value = 10
-			case "Ace":
-				cardSetup.Value = 1
-			case "Two":
-				cardSetup.Value = 2
-			case "Three":
-				cardSetup.Value = 3
-			case "Four":
-				cardSetup.Value = 4
-			case "Five":
-				cardSetup.Value = 5
-			case "Six":
-				cardSetup.Value = 6
-			case "Seven":
-				cardSetup.Value = 7
-			case "Eight":
-				cardSetup.Value = 8
-			case "Nine":
-				cardSetup.Value = 9
-			case "Ten":
-				cardSetup.Value = 10
-			default:
-				cardSetup.Value = 0
+	for i := 0; i < 2; i++ {
+		for _, v := range suits {
+			for _, w := range values {
+				cardSetup.Suit = v
+				cardSetup.Face = w
+				switch cardSetup.Face {
+				case "Jack", "Queen", "King":
+					cardSetup.Value = 10
+				case "Ace":
+					cardSetup.Value = 1
+				case "Two":
+					cardSetup.Value = 2
+				case "Three":
+					cardSetup.Value = 3
+				case "Four":
+					cardSetup.Value = 4
+				case "Five":
+					cardSetup.Value = 5
+				case "Six":
+					cardSetup.Value = 6
+				case "Seven":
+					cardSetup.Value = 7
+				case "Eight":
+					cardSetup.Value = 8
+				case "Nine":
+					cardSetup.Value = 9
+				case "Ten":
+					cardSetup.Value = 10
+				default:
+					cardSetup.Value = 0
+				}
+				g.Deck.Cards = append(g.Deck.Cards, cardSetup)
 			}
-			g.Deck.Cards = append(g.Deck.Cards, cardSetup)
 		}
 	}
 }
@@ -114,9 +120,7 @@ func (g *Game) ShuffleDeck() {
 	for i := 0; i < 3; i++ {
 		for i := 0; i < len(g.Deck.Cards); i++ {
 			r := rand.Intn(len(g.Deck.Cards))
-
 			g.Deck.Cards[i], g.Deck.Cards[r] = g.Deck.Cards[r], g.Deck.Cards[i]
-
 		}
 	}
 }
@@ -143,4 +147,12 @@ func (g *Game) PrintPlayers() {
 	for _, v := range g.Players {
 		fmt.Println(v)
 	}
+}
+
+// DealCard Retrieves last Card from Deck, appends it to the given Player, then erases said Card from Deck
+func (g *Game) DealCard(p *Player) {
+	lastCard := g.Deck.Cards[len(g.Deck.Cards)-1]
+	fmt.Println(lastCard)
+	p.Hand.Cards = append(p.Hand.Cards, lastCard)
+	g.Deck.Cards = g.Deck.Cards[:len(g.Deck.Cards)-1]
 }
