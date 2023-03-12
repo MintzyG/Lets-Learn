@@ -61,4 +61,13 @@ func test() {
 	}
 
 	fmt.Println(i)
+
+	// If we get some very unexpected error, that we are not prepared to handle through code
+	// we can throw a 'panic', that will completely stop our program and fail fast
+
+	// We can pass strings or errors into the panic field, to display them on the console
+	panic("Something went terribly wrong")
+
+	// Panic will then exit our program with a non-zero value and show the traces of every go routine that was running on the console
+
 }
