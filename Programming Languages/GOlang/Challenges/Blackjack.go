@@ -28,6 +28,7 @@ type Player struct {
 	Hand     Container
 	Money    int
 	PlayerID int
+	Bet      int
 }
 
 func (p Player) String() string {
@@ -59,16 +60,27 @@ func SetupGame(s Setup) {
 	s.ShuffleDeck()
 }
 
-type GameFunctionality interface {
-	DealCard()
+type GameLoop interface {
+	FirstDeal()
+	DealCard(p *Player)
+	TakeBets()
+}
+
+func PlayRound(gl GameLoop) {
+	gl.TakeBets()
+	gl.FirstDeal()
 }
 
 func main() {
 
 	Blackjack := Game{NumberOfPlayers: 1}
 	SetupGame(&Blackjack)
-	Blackjack.DealCard(&Blackjack.Players[0])
-	Blackjack.PrintPlayers()
+
+	// Game Loop
+	for {
+		PlayRound(&Blackjack)
+	}
+
 }
 
 func (g *Game) SetupDeck() {
@@ -127,6 +139,8 @@ func (g *Game) ShuffleDeck() {
 
 func (g *Game) SetupPlayers() {
 
+	g.Dealer.PlayerID = 0
+
 	p := Player{Money: 1000}
 	p.Hand.Name = "Player Hand"
 
@@ -152,7 +166,55 @@ func (g *Game) PrintPlayers() {
 // DealCard Retrieves last Card from Deck, appends it to the given Player, then erases said Card from Deck
 func (g *Game) DealCard(p *Player) {
 	lastCard := g.Deck.Cards[len(g.Deck.Cards)-1]
-	fmt.Println(lastCard)
 	p.Hand.Cards = append(p.Hand.Cards, lastCard)
 	g.Deck.Cards = g.Deck.Cards[:len(g.Deck.Cards)-1]
+}
+
+func (g *Game) FirstDeal() {
+
+	if len(g.Deck.Cards) < len(g.Players)*2+2 {
+		g.CleanDeck()
+		g.SetupDeck()
+		g.ShuffleDeck()
+	}
+
+	for i := 0; i < 2; i++ {
+		for i := 0; i < len(g.Players); i++ {
+			g.DealCard(&g.Players[i])
+		}
+		g.DealCard(&g.Dealer)
+	}
+}
+
+func (g *Game) CleanDeck() {
+	g.Deck.Cards = g.Deck.Cards[:0]
+}
+
+func (g *Game) TakeBets() {
+
+	var betAmount int
+
+	for i, v := range g.Players {
+		fmt.Printf("Player %v: How much would you like to bet, you have %v\n", v.PlayerID, v.Money)
+		for {
+			_, err := fmt.Scanln(&betAmount)
+			if err != nil {
+				fmt.Println("ERROR: You made a invalid bet, please bet again")
+				continue
+			}
+
+			if betAmount > v.Money || betAmount <= 0 {
+				fmt.Println("You made a invalid bet, please bet again")
+				continue
+			}
+
+			g.Players[i].Bet = betAmount
+			g.Players[i].Money -= betAmount
+
+			fmt.Println("You've bet", g.Players[i].Bet, "now you have", v.Money)
+
+			break
+
+		}
+	}
 }
