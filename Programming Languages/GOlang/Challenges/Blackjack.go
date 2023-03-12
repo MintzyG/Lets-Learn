@@ -64,11 +64,17 @@ type GameLoop interface {
 	FirstDeal()
 	DealCard(p *Player)
 	TakeBets()
+	CheckBj() bool
 }
 
-func PlayRound(gl GameLoop) {
+func PlayRound(gl GameLoop) bool {
 	gl.TakeBets()
 	gl.FirstDeal()
+	if gl.CheckBj() {
+		return true
+	}
+
+	return false
 }
 
 func main() {
@@ -78,7 +84,9 @@ func main() {
 
 	// Game Loop
 	for {
-		PlayRound(&Blackjack)
+		if PlayRound(&Blackjack) {
+			continue
+		}
 	}
 
 }
@@ -217,4 +225,60 @@ func (g *Game) TakeBets() {
 
 		}
 	}
+}
+
+//TODO: code the ReturnBets(), TableWins() and PayoutWinners() functions
+
+func (g *Game) CheckBj() bool {
+
+	var TotalValue int
+	var Blackjacks []Player
+	var Lost []Player
+
+	for _, v := range g.Dealer.Hand.Cards {
+		TotalValue += v.Value
+	}
+
+	if TotalValue == 11 {
+		Blackjacks = append(Blackjacks, g.Dealer)
+	}
+
+	for i := range g.Players {
+		TotalValue = 0
+		for _, w := range g.Players[i].Hand.Cards {
+			TotalValue += w.Value
+		}
+		if TotalValue == 11 {
+			Blackjacks = append(Blackjacks, g.Players[i])
+		} else {
+			Lost = append(Lost, g.Players[i])
+		}
+	}
+
+	if len(Blackjacks) > 1 && Blackjacks[0].PlayerID == 0 {
+		ReturnBets(g, Blackjacks...)
+		// LostBet(g, Lost...)
+		// return true
+	} else if len(Blackjacks) == 1 && Blackjacks[0].PlayerID == 0 {
+		// TableWins(g)
+		// LostBet(g, Lost...)
+		// return true
+	} else {
+		// PayoutWinners(g, Blackjacks...)
+		// LostBet(g, Lost...)
+		// return true
+	}
+
+	return false
+}
+
+func ReturnBets(g *Game, p ...Player) {
+
+	for i := range p {
+		if g.Players[i].PlayerID != 0 {
+			g.Players[i].Money += g.Players[i].Bet
+			g.Players[i].Bet = 0
+		}
+	}
+
 }
