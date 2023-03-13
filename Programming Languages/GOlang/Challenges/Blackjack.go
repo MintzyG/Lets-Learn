@@ -25,10 +25,12 @@ type Container struct {
 }
 
 type Player struct {
-	Hand     Container
-	Money    int
-	PlayerID int
-	Bet      int
+	Hand          Container
+	Money         int
+	PlayerID      int
+	Bet           int
+	FinishedRound bool
+	Blackjacked   bool
 }
 
 func (p Player) String() string {
@@ -64,17 +66,15 @@ type GameLoop interface {
 	FirstDeal()
 	DealCard(p *Player)
 	TakeBets()
-	CheckBj() bool
+	ShowCards()
+	CheckBj()
 }
 
-func PlayRound(gl GameLoop) bool {
+func PlayRound(gl GameLoop) {
 	gl.TakeBets()
 	gl.FirstDeal()
-	if gl.CheckBj() {
-		return true
-	}
-
-	return false
+	gl.ShowCards()
+	gl.CheckBj()
 }
 
 func main() {
@@ -84,9 +84,7 @@ func main() {
 
 	// Game Loop
 	for {
-		if PlayRound(&Blackjack) {
-			continue
-		}
+		PlayRound(&Blackjack)
 	}
 
 }
@@ -229,56 +227,68 @@ func (g *Game) TakeBets() {
 
 //TODO: code the ReturnBets(), TableWins() and PayoutWinners() functions
 
-func (g *Game) CheckBj() bool {
+func (g *Game) CheckBj() {
 
 	var TotalValue int
-	var Blackjacks []Player
-	var Lost []Player
 
 	for _, v := range g.Dealer.Hand.Cards {
 		TotalValue += v.Value
 	}
 
 	if TotalValue == 11 {
-		Blackjacks = append(Blackjacks, g.Dealer)
+		g.Dealer.Blackjacked = true
 	}
 
 	for i := range g.Players {
 		TotalValue = 0
-		for _, w := range g.Players[i].Hand.Cards {
-			TotalValue += w.Value
+		for _, v := range g.Players[i].Hand.Cards {
+			TotalValue += v.Value
 		}
 		if TotalValue == 11 {
-			Blackjacks = append(Blackjacks, g.Players[i])
-		} else {
-			Lost = append(Lost, g.Players[i])
+			g.Players[i].Blackjacked = true
 		}
 	}
 
-	if len(Blackjacks) > 1 && Blackjacks[0].PlayerID == 0 {
-		ReturnBets(g, Blackjacks...)
-		// LostBet(g, Lost...)
-		// return true
-	} else if len(Blackjacks) == 1 && Blackjacks[0].PlayerID == 0 {
-		// TableWins(g)
-		// LostBet(g, Lost...)
-		// return true
+	if g.Dealer.Blackjacked {
+		for i := range g.Players {
+			if g.Players[i].Blackjacked {
+				fmt.Println("You got your bet returned")
+				ReturnBets(&g.Players[i])
+				g.Players[i].Blackjacked = false
+			} else {
+				fmt.Println("You lost your bet")
+				LostBets(&g.Players[i])
+			}
+		}
+		g.Dealer.Blackjacked = false
 	} else {
-		// PayoutWinners(g, Blackjacks...)
-		// LostBet(g, Lost...)
-		// return true
+		for i := range g.Players {
+			if g.Players[i].Blackjacked && g.Players[0].PlayerID != 0 {
+				fmt.Println("You blackjacked")
+				WonBet(&g.Players[i])
+				g.Players[i].Blackjacked = false
+			}
+		}
 	}
-
-	return false
 }
 
-func ReturnBets(g *Game, p ...Player) {
+func ReturnBets(p *Player) {
+	p.Money += p.Bet
+	p.Bet = 0
+}
 
-	for i := range p {
-		if g.Players[i].PlayerID != 0 {
-			g.Players[i].Money += g.Players[i].Bet
-			g.Players[i].Bet = 0
-		}
+func LostBets(p *Player) {
+	p.Bet = 0
+}
+
+func WonBet(p *Player) {
+	p.Money += 2 * p.Bet
+	p.Bet = 0
+}
+
+func (g *Game) ShowCards() {
+	for i := range g.Players {
+		fmt.Println("Player", i+1, "got: ")
+		fmt.Println(g.Players[i].Hand.Cards)
 	}
-
 }
