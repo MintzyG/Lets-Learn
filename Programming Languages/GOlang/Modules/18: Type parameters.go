@@ -1,3 +1,5 @@
+//TODO: change this module to 'Generics' and add the rest of it
+
 package main
 
 import "fmt"
