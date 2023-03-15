@@ -43,11 +43,10 @@ func (p Player) String() string {
 }
 
 type Game struct {
-	Players         []Player
-	Dealer          Player
-	Deck            Container
-	NumberOfPlayers int
-	CurrentPlayer   int
+	Players       []Player
+	Dealer        Player
+	Deck          Container
+	CurrentPlayer int
 }
 
 type Setup interface {
@@ -67,19 +66,24 @@ type GameLoop interface {
 	DealCard(p *Player)
 	TakeBets()
 	ShowCards()
-	CheckBj()
+	CheckBj() bool
 }
 
 func PlayRound(gl GameLoop) {
 	gl.TakeBets()
 	gl.FirstDeal()
 	gl.ShowCards()
-	gl.CheckBj()
+	if !gl.CheckBj() {
+		ShowDealer()
+
+	} else {
+
+	}
 }
 
 func main() {
 
-	Blackjack := Game{NumberOfPlayers: 1}
+	Blackjack := Game{}
 	SetupGame(&Blackjack)
 
 	// Game Loop
@@ -225,9 +229,7 @@ func (g *Game) TakeBets() {
 	}
 }
 
-//TODO: code the ReturnBets(), TableWins() and PayoutWinners() functions
-
-func (g *Game) CheckBj() {
+func (g *Game) CheckBj() bool {
 
 	var TotalValue int
 
@@ -261,12 +263,15 @@ func (g *Game) CheckBj() {
 			}
 		}
 		g.Dealer.Blackjacked = false
+		return true
 	} else {
 		for i := range g.Players {
 			if g.Players[i].Blackjacked && g.Players[0].PlayerID != 0 {
 				fmt.Println("You blackjacked")
 				WonBet(&g.Players[i])
 				g.Players[i].Blackjacked = false
+				g.Players[i].FinishedRound = true
+				return true
 			}
 		}
 	}

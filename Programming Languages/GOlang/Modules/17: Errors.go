@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"errors"
+	"fmt"
+)
 
 func main() {
 
@@ -13,16 +16,19 @@ func main() {
 	// Then we make a stringer to tell the code how to print it
 	// Now let's make our function then later understand what happens in 'test()'
 
+	fmt.Println(test2())
 	test()
 }
 
 // We made here a function that uses a type switch to determine if a value is of type string
 // If it's not of type string it returns false and an error
+// By convention errors are the last return value and have type error
 
 func IsText(value any) (bool, error) {
 
 	switch value.(type) {
 	case string:
+		// A nil value in the error position indicates that there was no error
 		return true, nil
 	default:
 		return false, &MyError{"Text is not string"}
@@ -70,4 +76,23 @@ func test() {
 
 	// Panic will then exit our program with a non-zero value and show the traces of every go routine that was running on the console
 
+}
+
+// It's possible to use custom type as errors by implementing the Error() method on them
+
+type MyError2 struct {
+	Value   int
+	Problem string
+}
+
+// Making MyError2 into an error
+
+func (e *MyError2) Error() string {
+	return fmt.Sprintf("%v - %v", e.Value, e.Problem)
+}
+
+// errors.new() can create a basic error with the given error message
+
+func test2() (error, error) {
+	return errors.New("OOPS"), &MyError2{Value: 2, Problem: "is a boring number"}
 }
