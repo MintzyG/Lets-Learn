@@ -96,6 +96,7 @@ func main() {
 	// Slices can be created with the make() function, this is how you create dynamically sized arrays
 	// The make function allocates a zeroed array and returns a slice that refers to that array
 
+	//TODO: make a 'optionals' folder explaining some stuff in better detail
 	makeSlice := make([]int, 5) // makes a dynamic array of length 5
 	// You can pass a third argument to specify a capacity
 	printSlice(makeSlice)
