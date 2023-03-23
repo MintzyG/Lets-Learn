@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 
-	// A 'map' maps keys to values
+	// A 'map' assigns keys to values
 	// The zero value of a map is nil, A nil map has no keys, and they can't be added
 	// The make() function returns a map of the given type initialized
 
