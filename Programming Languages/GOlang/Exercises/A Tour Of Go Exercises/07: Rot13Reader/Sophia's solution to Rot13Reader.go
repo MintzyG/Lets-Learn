@@ -1,4 +1,4 @@
-// I still have question about this one
+// I still don't quite understand
 package main
 
 import (
@@ -11,7 +11,6 @@ type rot13Reader struct {
 	r io.Reader
 }
 
-// Why passing 'b' by value is actually changing its value outside the function???
 func (rot *rot13Reader) Read(b []byte) (int, error) {
 
 	i, err := rot.r.Read(b)
