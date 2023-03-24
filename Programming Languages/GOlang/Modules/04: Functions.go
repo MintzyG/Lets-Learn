@@ -94,6 +94,11 @@ func main() {
 	// That's why here it still prints '4'
 	fmt.Println(nextInt())
 
+	number3 := nextNumber()
+
+	fmt.Println("nextNumber()", number3())
+	fmt.Println("nextNumber()", number3())
+
 	// Variadic functions
 	// Read first after the main()
 
