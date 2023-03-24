@@ -1,4 +1,4 @@
-// Very bad solution, but a future proof one
+// Very bad solution, but a future proof one?
 package main
 
 import "fmt"

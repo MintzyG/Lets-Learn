@@ -1,5 +1,8 @@
-// Code only runs is 'A tour of go'
 package main
+
+/*
+
+This code does not run in an IDE
 
 import "golang.org/x/tour/reader"
 
@@ -15,3 +18,4 @@ func (m MyReader) Read(b []byte) (int, error) {
 func main() {
 	reader.Validate(MyReader{})
 }
+*/

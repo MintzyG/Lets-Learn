@@ -1,5 +1,8 @@
-// This solution doesn't run in the ide, only in the "A tour of go" playground
 package main
+
+/*
+
+This Code does not run in an IDE
 
 import (
 	"golang.org/x/tour/wc"
@@ -24,3 +27,4 @@ func WordCount(s string) map[string]int {
 func main() {
 	wc.Test(WordCount)
 }
+*/

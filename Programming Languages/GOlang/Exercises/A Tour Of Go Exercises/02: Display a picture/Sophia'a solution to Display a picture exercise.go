@@ -1,6 +1,8 @@
-// This program does not compile in goland, only in the a tour of go playground
-
 package main
+
+/*
+
+This code does not run in an IDE
 
 import "golang.org/x/tour/pic"
 
@@ -20,3 +22,4 @@ func Pic(dx, dy int) [][]uint8 {
 func main() {
 	pic.Show(Pic)
 }
+*/

@@ -1,5 +1,9 @@
 package main
 
+/*
+
+	This code does not work in an IDE
+
 import "golang.org/x/tour/pic"
 import "image"
 import "image/color"
@@ -24,3 +28,4 @@ func main() {
 	m := Image{500, 500}
 	pic.ShowImage(m)
 }
+*/
