@@ -1,4 +1,4 @@
-package _0__Binary_tree_search
+package main
 
 /*
 
@@ -22,7 +22,7 @@ func Same(t1, t2 *tree.Tree) bool {
 	c1 := make(chan int)
 	c2 := make(chan int)
 
-	go Walk(t1, c1)1
+	go Walk(t1, c1)
 	close(c1)
 	go Walk(t2, c2)
 	close(c2)
