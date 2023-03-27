@@ -1,7 +1,7 @@
 # Let's-Learn
 
 ## Goals:
-Let's learn goals are to compile multiple teaching sources of various languages and teach people through code and it's comments how to code in their desired language.
+Let's Learn goals are to compile multiple teaching sources of various languages and teach people through code and it's comments how to code in their desired language.
 Right now the project is at its early days and have only me working in it, in the language go
 In the future I want this repo to have as much languages as possible and be the best quality as it can be, to be able to easily teach others
 
