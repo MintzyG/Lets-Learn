@@ -10,4 +10,4 @@ As time goes on, i want this repo to acquire as many languages as possible and a
 - If you want to participate in the project or make any fixes/implement new modules or languages, i can add you as a collaborator, just send me a message.
 - The exercises are part of the project but still need to have its structure decided.
 
-#### TLDR; Let's Learn is a repo dedicated to teaching others the technologies and languages they want to learn. We have Go and Scala.
+#### TLDR; Let's Learn is a repo dedicated to teaching others the technologies and languages they want to learn.
