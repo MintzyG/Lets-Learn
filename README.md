@@ -19,12 +19,16 @@ Let's Learn is a repo dedicated to teaching others the technologies and language
 Languages
 </p>
 
+<div>
 <p align="center">
 <a href=https://github.com/MintzyG/Lets-Learn/tree/main/Programming%20Languages/GOlang>
-<img alt="GoLang" src=https://cdn.jsdelivr.net/npm/programming-languages-logos/src/go/go.png width="64" height="64"></a>
+<img alt="GoLang" src=https://images.squarespace-cdn.com/content/v1/5df3d8c5d2be5962e4f87890/1627938869270-95JFU0YPSRRE8XU4TFGM/golang+icon.png width="40" height="40"></a>
 <a href=https://github.com/MintzyG/Lets-Learn/tree/main/Programming%20Languages/Scala/Modules>
-<img alt="Scala" src=https://i.imgur.com/VDVjrDp.png width="30" height="58"></a>
+<img alt="Scala" src=https://i.imgur.com/DmYntZT.png width="36" height="48"></a>
+<a href=https://github.com/MintzyG/Lets-Learn/tree/main/Programming%20Languages/Scala/Modules>
+<img alt="Scala" src=https://raw.githubusercontent.com/aroxu/programming-languages-logos/master/src/c/c.svg width="36" height="48"></a>
 </p>
+</div>
 
 <h1 align="center">
 Goals:
