@@ -26,7 +26,9 @@ Languages
 <img alt="Scala" src=https://i.imgur.com/VDVjrDp.png width="30" height="58"></a>
 </p>
 
-## Goals:
+<h1 align="center">
+Goals:
+</h1>
 
 Let's Learn's goals are to compile multiple teaching sources of various languages and to teach people how to code in their desired language.
 The project is currently at its infancy and only three people working on it, focusing on the language Go and Scala.
