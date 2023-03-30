@@ -22,6 +22,7 @@ Languages
 <p align="center">
 <a href=https://github.com/MintzyG/Lets-Learn/tree/main/Programming%20Languages/GOlang>
 <img alt="GoLang" src=https://cdn.jsdelivr.net/npm/programming-languages-logos/src/go/go.png width="64" height="64"></a>
+<br>
 <a href=https://github.com/MintzyG/Lets-Learn/tree/main/Programming%20Languages/Scala/Modules>
 <img alt="Scala" src=https://i.imgur.com/VDVjrDp.png width="30" height="58"></a>
 </p>
