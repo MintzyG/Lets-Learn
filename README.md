@@ -51,3 +51,9 @@ If you want to take part in the project you can, and it's pretty easy
 - Make a pull request to have your content reviewed and merged
 
 We just ask that you follow our standards.
+
+<h1 align="center">
+Licensed under the MIT license
+</h1>
+
+Read more about it [here](https://github.com/MintzyG/Lets-Learn/blob/main/LICENSE)
