@@ -36,8 +36,18 @@ Goals:
 
 Let's Learn's goals are to compile multiple teaching sources of various languages and to teach people how to code in their desired language.
 The project is currently at its infancy and only three people working on it, focusing on the language Go and Scala.
-As time goes on, i want this repo to acquire as many languages as possible and achieve a great standard in quality, being able to easily teach others.
+As time goes on, we hope this repo will get as languages as possible and achieve a great standard in quality, being able to easily teach others.
 
 - We use multiple trusted sources for each language and cross-examine them to create the content of Let's Learn, with each member specializing in a language.
-- If you want to participate in the project or make any fixes/implement new modules or languages, i can add you as a collaborator, just send me a message.
-- The exercises are part of the project but still need to have its structure decided.
+
+<h1 align="center">
+How to contribute
+</h1>
+
+If you want to take part in the project you can, and it's pretty easy
+
+- Fork this repo
+- Create your Fixes/Modules/Exercises/Solutions
+- Make a pull request to have your content reviewed and merged
+
+We just ask that you follow our standards.
