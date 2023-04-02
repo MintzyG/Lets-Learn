@@ -31,11 +31,11 @@ Linguagens de Programação:
 <div>
 <p align="center">
 <a href=https://github.com/MintzyG/Lets-Learn/tree/main/Programming%20Languages/GOlang>
-<img alt="GoLang" src=https://images.squarespace-cdn.com/content/v1/5df3d8c5d2be5962e4f87890/1627938869270-95JFU0YPSRRE8XU4TFGM/golang+icon.png width="40" height="40"></a>
+<img alt="GoLang" src=https://i.imgur.com/FDP8PtQ.png width="64" height="64"></a>
 <a href=https://github.com/MintzyG/Lets-Learn/tree/main/Programming%20Languages/Scala/Modules>
-<img alt="Scala" src=https://i.imgur.com/DmYntZT.png width="36" height="48"></a>
-<a href=https://github.com/MintzyG/Lets-Learn/tree/main/Programming%20Languages/Scala/Modules>
-<img alt="Scala" src=https://raw.githubusercontent.com/aroxu/programming-languages-logos/master/src/c/c.svg width="36" height="48"></a>
+<img alt="Scala" src=https://i.imgur.com/0ykfXEm.png width="64" height="64"></a>
+<a href=https://github.com/MintzyG/Lets-Learn/>
+<img alt="C" src=https://i.imgur.com/6TaSlGz.png width="64" height="64"></a>
 </p>
 </div>
 
