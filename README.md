@@ -5,7 +5,7 @@ Let's Learn
 <p align="center">
 <a href=https://github.com/MintzyG/Lets-Learn#readme>
 <img alt="English" src=https://img.shields.io/badge/lang-en-%23f8c4e4?style=for-the-badge></a>
-<a href=>
+<a href=https://github.com/MintzyG/Lets-Learn/blob/main/README.pt-br.md>
 <img alt="Brazilian" src=https://img.shields.io/badge/lang-pt--br-%23a8e4a4?style=for-the-badge></a>
 </p>
 
