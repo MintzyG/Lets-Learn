@@ -15,11 +15,13 @@ Vamos Aprender é um respositório dedicado a ensinar a outros as tecnologias e 
 
 <p align="center">
 <a href=https://github.com/MintzyG/Lets-Learn/issues>
-<img alt="Issues" src="https://img.shields.io/github/issues/mintzyg/lets-learn?style=flat-square"></a> 
+<img alt="Issues" src="https://img.shields.io/github/issues/mintzyg/lets-learn?color=%23f8e4dc&style=for-the-badge"></a> 
 <a href=https://github.com/MintzyG/Lets-Learn/pulls>
-<img alt="Commits" src="https://img.shields.io/github/last-commit/mintzyg/lets-learn?style=flat-square"></a>
+<img alt="Commits" src="https://img.shields.io/github/last-commit/mintzyg/lets-learn?color=%2378c4ec&style=for-the-badge"></a>
 <a href=https://github.com/MintzyG/Lets-Learn/graphs/contributors>
-<img alt="Contributors" src="https://img.shields.io/github/contributors/mintzyg/lets-learn?style=flat-square"></a>
+<img alt="Contributors" src="https://img.shields.io/github/contributors/mintzyg/lets-learn?color=d0a4f4&style=for-the-badge"></a>
+<a href=https://github.com/MintzyG/Lets-Learn/blob/main/LICENSE>
+<img alt="License" src="https://img.shields.io/github/license/mintzyg/lets-learn?color=%23b8bcfc&style=for-the-badge"></a>
 </p>
 
 <p align="center">
