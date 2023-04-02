@@ -2,6 +2,13 @@
 Let's Learn
 </h1>
 
+<p align="center">
+<a href=https://github.com/MintzyG/Lets-Learn#readme>
+<img alt="English" src=https://img.shields.io/badge/lang-en-%23f8c4e4?style=for-the-badge></a>
+<a href=>
+<img alt="Brazilian" src=https://img.shields.io/badge/lang-pt--br-%23a8e4a4?style=for-the-badge></a>
+</p>
+
 <h3 align="center">
 Let's Learn is a repo dedicated to teaching others the technologies and languages they want to learn through code and its comments how to code in their desired language.
 </h3>
