@@ -34,7 +34,7 @@ Linguagens de Programação:
 <img alt="GoLang" src=https://i.imgur.com/FDP8PtQ.png width="64" height="64"></a>
 <a href=https://github.com/MintzyG/Lets-Learn/tree/main/Programming%20Languages/Scala/Modules>
 <img alt="Scala" src=https://i.imgur.com/0ykfXEm.png width="64" height="64"></a>
-<a href=https://github.com/MintzyG/Lets-Learn/>
+<a href=https://github.com/MintzyG/Lets-Learn/tree/main/Programming%20Languages/C>
 <img alt="C" src=https://i.imgur.com/6TaSlGz.png width="64" height="64"></a>
 </p>
 </div>
