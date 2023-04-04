@@ -28,7 +28,6 @@ Let's Learn is a repo dedicated to teaching others the technologies and language
 Languages
 </p>
 
-<div>
 <p align="center">
 <a href=https://github.com/MintzyG/Lets-Learn/tree/main/Programming%20Languages/GOlang>
 <img alt="GoLang" src=https://i.imgur.com/FDP8PtQ.png width="64" height="64"></a>
@@ -37,7 +36,6 @@ Languages
 <a href=https://github.com/MintzyG/Lets-Learn>
 <img alt="C" src=https://i.imgur.com/6TaSlGz.png width="64" height="64"></a>
 </p>
-</div>
 
 <h1 align="center">
 Goals:
