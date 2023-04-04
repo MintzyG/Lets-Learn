@@ -1,5 +1,5 @@
 <h1 align="center">
-C
+The C Language
 </h1>
 
 <p align="center">
