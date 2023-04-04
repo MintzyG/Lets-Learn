@@ -14,6 +14,6 @@ C is a general purpose, low-level structured language, it's fairly straightforwa
 
 <p align="center">
 <b>
-Under Construction
+Under Construction, come back later!
 </b>
 </p>
