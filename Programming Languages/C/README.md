@@ -8,7 +8,7 @@ The C Language
 </p>
 
 <p align="center">
-C is a general purpose, structured language, it's fairly straightforward and the basis of many other high level languages.
+C is a general purpose, low-level structured language, it's fairly straightforward and the basis of many other high level languages.
 </p>
 
 
