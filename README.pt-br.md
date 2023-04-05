@@ -40,20 +40,26 @@ Linguagens de Programação:
 </div>
 
 <h1 align="center">
-Objetivos:
+Objetivos
 </h1>
 
-Os objetivos de Vamos Aprender são compilar múltiplas fontes de aprendizado de várias linguagens e ensinar as pessoas como programar em sua linguagem desejada.
+Compilar múltiplas fontes de aprendizado de várias linguagens e ensinar as pessoas como programar em sua linguagem desejada.
+
+- Utilizamos múltiplas fontes de conhecimento confiáveis para cada linguagem, e cada membro da equipe se especializa em uma.
+
+<h1 align="center">
+Sobre
+</h1>
+
 O projeto ainda está em sua infância, com atualmente 3 pessoas trabalhando nele, focando nas linguagens Go e Scala.
 Com o tempo, nós esperamos que esse projeto consiga o máximo de linguagens possíveis e alcance uma alta qualidade, podendo facilmente ensinar outros.
 
-- Utilizamos múltiplas fontes de conhecimento confiáveis para cada linguagem, e cada membro da equipe se especializa em uma.
 
 <h1 align="center">
 Como contribuir:
 </h1>
 
-Se quer fazer parte deste projeto, você pode, e é muito simples.
+Se quer fazer parte deste projeto, você pode, e é muito simples:
 
 - Bifurque este repositório.
 - Crie seu conteúdo.
