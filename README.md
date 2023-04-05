@@ -37,6 +37,7 @@ Languages
 <img alt="C" src=https://i.imgur.com/6TaSlGz.png width="64" height="64"></a>
 </p>
 
+<br>
 <h1 align="center">
 Goals:
 </h1>
@@ -47,6 +48,7 @@ As time goes on, we hope this repo will get as languages as possible and achieve
 
 - We use multiple trusted sources for each language and cross-examine them to create the content of Let's Learn, with each member specializing in a language.
 
+<br>
 <h1 align="center">
 How to contribute
 </h1>
@@ -62,7 +64,7 @@ We just ask that you follow our standards, which currently are:
 - Your pull request must have an understandable name and description.
 - If coding, your code must run properly and have comments that assist in teaching.
 
-
+<br>
 <h1 align="center">
 Licensed under the MIT license
 </h1>
