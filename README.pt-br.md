@@ -47,6 +47,7 @@ Compilar múltiplas fontes de aprendizado de várias linguagens e ensinar as pes
 
 - Utilizamos múltiplas fontes de conhecimento confiáveis para cada linguagem, e cada membro da equipe se especializa em uma.
 
+<br>
 <h1 align="center">
 Sobre
 </h1>
@@ -54,7 +55,7 @@ Sobre
 O projeto ainda está em sua infância, com atualmente 3 pessoas trabalhando nele, focando nas linguagens Go e Scala.
 Com o tempo, nós esperamos que esse projeto consiga o máximo de linguagens possíveis e alcance uma alta qualidade, podendo facilmente ensinar outros.
 
-
+<br>
 <h1 align="center">
 Como contribuir:
 </h1>
@@ -70,6 +71,7 @@ Só pedimos que siga nossos padrões, que atualmente são:
 - Sua socilitação de pull deve possuir um nome e descrição compreensíveis. 
 - Seu código deve rodar, e possuir comentários que auxiliem no aprendizado.
 
+<br>
 <h1 align="center">
 Licenciado sob a licença MIT.
 </h1>
