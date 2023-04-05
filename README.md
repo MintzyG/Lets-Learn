@@ -50,7 +50,8 @@ Let's Learn's goals are to compile multiple teaching sources of various language
 <h1 align="center">
 About
 </h1>
-he project is currently at its infancy and only three people working on it, focusing on the language Go and Scala.
+
+The project is currently at its infancy and only three people working on it, focusing on the language Go and Scala.
 As time goes on, we hope this repo will get as languages as possible and achieve a great standard in quality, being able to easily teach others.
 
 <br>
