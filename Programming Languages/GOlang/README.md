@@ -8,8 +8,12 @@ GOlang
 </p>
 
 <p align="center">
+  Go or GOlang is an open source, statically typed, compiled language developed by Google.
+  Go is focused on productivity and concurrency commonly used for web development and microservices
+</p>
+
+<p align="center">
   <b>
-    Go or GOlang is an open source, statically typed, compiled language developed by Google.
-    Go is focused on productivity and concurrency commonly used for web development and microservices
+    Under Construction
   </b>
 </p>
