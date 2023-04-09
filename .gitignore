@@ -2,3 +2,5 @@
 .idea
 .mod
 *.mod
+.vs/
+.vs
