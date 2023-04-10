@@ -11,8 +11,10 @@ int main() {
 	// Before beggining to code, you have to add the main function, it tells the OS when your program runs.
 	// Int is an integer value, which means it requires returning an integer to finalize the code.
 	printf ("Hello World"); // Our usual Hello World.
-	return 0; //If the program returns 0, it means that it has been ran succesfully, if not, we encountered an error.
+	return 0;
+    // If the program returns 0, it means that it has been ran succesfully
+    // Otherwise it will return a non-zero value
 }
 
 
-// Use a GCC compiler to compile C into machine code, if needed.
+// Use GCC or Clang compiler to compile your C into an executable file
