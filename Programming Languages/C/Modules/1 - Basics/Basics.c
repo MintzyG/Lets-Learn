@@ -1,7 +1,7 @@
 // Welcome to the C tutorial.
 // Naturally, you can already see how to create comments.
 
-#include <stdio.h>;
+#include <stdio.h>
 
 // Including stdio.h is required, C does not have a built-in library, instead borrowing from the assembly
 // libraries included in the OS.
