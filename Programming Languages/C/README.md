@@ -12,6 +12,20 @@ C is a general purpose, low-level structured language, it's fairly straightforwa
 </p>
 
 
+
+<p align="center">
+References:
+</p>
+
+<dl align="center">
+<li>C, a Reference Manual Fifth Edition</li>
+<li>Iso C 1999 definition</li>
+<li>C Completo e Total (Schildit 3 ed)</li>
+<li>https://www.learn-c.org/</li>
+<li>https://www.programiz.com/c-programming</li>
+</dl>
+
+
 <p align="center">
 <b>
 Under Construction, come back later!
