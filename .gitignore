@@ -2,5 +2,12 @@
 .idea
 .mod
 *.mod
+<<<<<<< HEAD
+.metals
+.metals/
+.vscode
+.vscode/
+=======
 .vs/
 .vs
+>>>>>>> 272f96bd543ceb688146a9a297fb4bef75283965
