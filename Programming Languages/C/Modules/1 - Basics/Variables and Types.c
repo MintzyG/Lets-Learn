@@ -25,5 +25,16 @@
 //
 // We won't commonly use all of these, the ones we'll use most of the time are:
 // int, char, float, double
+//
+//---------------------int
+// As we saw in main, int is defined by an Integer value, a whole number, either positive, negative or zero.
+//---------------------char
+// Char is defined by characters, it allows for ASCII characters such as letters.
+// The characters are defined by numbers, char uses integer values to define characters.
+//---------------------float
+// Like Integers, this uses numbers, however, we can now use non-whole numbers, such as 6.7.
+//---------------------double
+// This works just like float, however it takes double the usual memory, allowing you to write complex numbers.
+//
 // A more in depth explanation of each data type can be found in the 'Variables' submodule 1
-// Here only the commonly used listed will be explained
+// In here, to keep it brief, we'll only mention the most commonly used variables.
