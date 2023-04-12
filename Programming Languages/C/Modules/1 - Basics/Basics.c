@@ -10,16 +10,19 @@
 // Also, you always have to input ; at the end of each statement, this tells the compiler you've ended that statement.
 
 int main() {
+	
 	// Before beggining to code, you have to add the main function, it tells the OS when your program runs.
 	// Int is an integer value, which means it requires returning an integer to finalize the code.
+	
 	printf ("Hello World."); 
-    // This is printf, a function that allows us to take a string and optional arguments and produce
-    // a formatted sequence of characters for output
+    	// This is printf, a function that allows us to take a string and optional arguments and produce
+    	// a formatted sequence of characters for output
 	// in the example, we're inputting the standard Hello World.
+	
 	return 0;
-    // If the program returns 0, it means that it has been ran succesfully
-    // Otherwise it will return a non-zero value, meaning an error.
-    // Int main() is mandatory for your code to run.
+    	// If the program returns 0, it means that it has been ran succesfully
+	// Otherwise it will return a non-zero value, meaning an error.
+    	// Int main() is mandatory for your code to run.
 }
 
 // I recommend rewriting the code yourself by memory to get accostumed to each function.
