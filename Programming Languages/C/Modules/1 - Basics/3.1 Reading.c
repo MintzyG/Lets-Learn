@@ -4,7 +4,7 @@ int main() {
 
     // Now that we learned how to print text, lets learn how to read text
     // For that we use scanf() a function from stdio.h
-    // Primeiramente para poder ler um valor temos que ter como armazena-lo
+    // First of all, to read a value we need to have some way to store said value.
 
     int x;
 
@@ -20,7 +20,7 @@ int main() {
     scanf("%i", &x);
 
     // Be aware that any input will be formatted to what you choose
-    // So nothing prohibits a user to inpu the letter 'B' for example consequently inputing some unkown int as the value
+    // So nothing prohibits a user to input the letter 'B' for example consequently inputing some unkown int as the value
 
     // Lets print our number
     printf("%i", x);
