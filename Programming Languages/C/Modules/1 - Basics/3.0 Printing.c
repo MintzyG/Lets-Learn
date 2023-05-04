@@ -5,14 +5,16 @@
 int main() {
 
     // Printing to the console is as easy as doing a printf() with text inside
-    // * the text has to be inside double quotes, otherwise it is interpreted as a variable input
+    // * the text has to be inside double quotation marks, otherwise it's interpreted as a variable input
+    
     printf("Hello World!");
 
     // Printf will only print to the same line, if we want a new line we have to specify it by using \n inside the text
-    // You don't have to place a space between \n and you text, C knows to only read \n as the new line and not your actual text
+    // You don't have to place a space between \n and your text, C knows to only read \n as the new line and not your actual text
 
     printf("\nHello! \nWorld!");
-
+    // In this example, \n will act as if we pressed enter before typing the word in a text input program such as notepad or word
+    // If you want to see it in action, try compiling this code.
     // Furthermore we can pass in variables to the printf() function to print them
     // And they don't need to be all characters, they can be, int, float or other types
 
