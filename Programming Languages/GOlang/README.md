@@ -4,7 +4,7 @@ GOlang
 
 <p align="center">
 <a href=https://github.com/MintzyG/Lets-Learn>
-<img alt="GOlang" src=https://i.imgur.com/FDP8PtQ.png width="124" height="124"></a>
+<img alt="GOlang" src=https://raw.githubusercontent.com/EmanuelPeixoto/Lets-Learn/PatchStage/assets/Gopher.png width="124" height="124"></a>
 </p>
 
 <p align="center">

@@ -5,8 +5,6 @@ Let's Learn
 <p align="center">
 <a href=https://github.com/MintzyG/Lets-Learn#readme>
 <img alt="English" src=https://img.shields.io/badge/lang-en-%23f8c4e4?style=for-the-badge></a>
-<a href=https://github.com/MintzyG/Lets-Learn/blob/main/README.pt-br.md>
-<img alt="Brazilian" src=https://img.shields.io/badge/lang-pt--br-%23a8e4a4?style=for-the-badge></a>
 </p>
 
 <h3 align="center">
@@ -30,11 +28,7 @@ Languages
 
 <p align="center">
 <a href=https://github.com/MintzyG/Lets-Learn/tree/main/Programming%20Languages/GOlang>
-<img alt="GoLang" src=https://i.imgur.com/FDP8PtQ.png width="64" height="64"></a>
-<a href=https://github.com/MintzyG/Lets-Learn/tree/main/Programming%20Languages/Scala/Modules>
-<img alt="Scala" src=https://i.imgur.com/0ykfXEm.png width="64" height="64"></a>
-<a href=https://github.com/MintzyG/Lets-Learn/tree/main/Programming%20Languages/C>
-<img alt="C" src=https://i.imgur.com/6TaSlGz.png width="64" height="64"></a>
+<img alt="GoLang" src=https://raw.githubusercontent.com/EmanuelPeixoto/Lets-Learn/PatchStage/assets/Gopher.png width="64" height="64"></a>
 </p>
 
 <br>
