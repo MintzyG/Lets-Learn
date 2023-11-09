@@ -28,7 +28,7 @@ Languages
 
 <p align="center">
 <a href=https://github.com/MintzyG/Lets-Learn/tree/main/Programming%20Languages/GOlang>
-<img alt="GoLang" src=https://raw.githubusercontent.com/EmanuelPeixoto/Lets-Learn/PatchStage/assets/Gopher.png width="64" height="64"></a>
+<img alt="GoLang" src=https://raw.githubusercontent.com/MintzyG/Lets-Learn/main/assets/Gopher.png width="64" height="64"></a>
 </p>
 
 <br>
